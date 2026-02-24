@@ -92,7 +92,7 @@ console.log(priceProduct)
 // =============================================
 
 console.log("Dùng filter() để lấy các sản phẩm còn hàng(inStock = true)")
-
+  
 const inStockProducts = products.filter((item, index) => item.inStock === true)
 console.log('inStockProducts:', inStockProducts)
 
@@ -101,9 +101,8 @@ console.log('inStockProducts:', inStockProducts)
 console.log("Dùng for...in để duyệt qua thuộc tính của sản phẩm đầu tiên")
 
 for (let key in products[0]) {
-    console.log(key, products[0][key]);
+    console.log(key);
 }
-
 
 // const v1 = {
 //     name: "Dress",
