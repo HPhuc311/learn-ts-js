@@ -1,11 +1,20 @@
 // ----------------------
 
 
-console.log("Tutorial 54")
+console.log("Tutorial 66")
 
-const element = document.getElementById("login")
+// promise
 
-element.addEventListener('click', () => {
-    console.log("Click me")
-    alert("Your message")
-})
+fetch("http://localhost:8000/users")
+    .then(res => res.json())
+    .then(data => console.log("fetch promise: ", data))
+
+
+// async await 
+const fetchData = async () => {
+    const res = await fetch("http://localhost:8000/users")
+    const data = await res.json();
+    console.log("fetch async await",data)
+}
+
+fetchData()

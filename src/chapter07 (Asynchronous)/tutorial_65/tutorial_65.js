@@ -1,25 +1,23 @@
 // ----------------------
 
 
-console.log("Tutorial 53")
+console.log("Tutorial 65")
+
+const greeting = (name, hoidanit) => {
+    console.log("Xin chao", name)
+    hoidanit()
+}
 
 
-myBtnColor = document.getElementById("myColor")
-myBtnColorBack = document.getElementById("myColorBack")
-myTextColor = document.getElementById("myText")
 
-console.log('myBtnColorBack:', myBtnColorBack)
-console.log('myTextColor:', myTextColor)
-console.log('myBtnColor:', myBtnColor)
+const hello = () => {
+    console.log("Call back.......")
+}
+const Hi = () => {
+    console.log("Hi back.......")
+}
 
 
-myBtnColor.addEventListener("click", () => {
-    myTextColor.style.color = "red";
-    myTextColor.style.backgroundColor = "blue";
-})
 
-myBtnColorBack.addEventListener("click", () => {
-    myTextColor.style.color = "black";
-    myTextColor.style.backgroundColor = "unset";
-})
 
+greeting("A", hello)
