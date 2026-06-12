@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_08_02</title>
+    <style>
+        #blog {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #blog td,
+        #blog th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #blog tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #blog tr:hover {
+            background-color: #ddd;
+        }
+
+        #blog th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lab_08_02</h1>
+
+    <div style="margin-left: 10px; margin-bottom: 20px; display: flex; flex-direction: column; gap: 5px;">
+        <div>
+            <label>Title</label>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <label>Author</label>
+            <input type="text" id="author">
+        </div>
+        <div>
+            <label>Content</label>
+            <input type="text" id="content">
+        </div>
+    </div>
+    <button id="btnSave">Save</button>
+
+
+    <table id="blog">
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Cotain</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr> -->
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>
